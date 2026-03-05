@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="grisFondo">
+    <!--- *Menú -->
+    <nav id="mainMenu" class="cafePrincipal">
+        <div>
+            <h2>Bookmory</h2>
+            <p>Biblioteca Personal</p>
+        </div>
+        <div>
+            <ol>
+                <li>Inicio</li>
+                <li>Catálogo</li>
+                <li>Mis libros</li>
+                <li>Pefil</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!--- *Parte principal -->
+    <main>
+        <header class="text-bg-light">
+            <h2>Hola, bienvenido</h2>
+        </header>
+
+        <!--- *Tarjetas de estado [Total, progreso, terminados, sin empezar] -->
+        <div>
+            <!--Tarjeta: Total de libros-->
+            <div class="text-bg-light">
+                <span>Icono</span>
+                <p>XX</p>
+                <p>Total de libros</p>
+            </div>
+            <!--Tarjeta: En proceso-->
+            <div class="text-bg-light">
+                <span>Icono</span>
+                <p>XX</p>
+                <p>En proceso</p>
+            </div>
+            <!--Tarjeta: Terminados -->
+            <div class="text-bg-light">
+                <span>Icono</span>
+                <p>XX</p>
+                <p>Terminados</p>
+            </div>
+            <!--Tarjeta: Sin empezar -->
+            <div class="text-bg-light">
+                <span>Icono</span>
+                <p>XX</p>
+                <p>Sin empezar</p>
+            </div>
+        </div>
+        <!--- FIN Tarjetas de estado [Total, progreso, terminados, sin empezar] -->
+
+        <!--Libros recientes-->
+        <section class="text-bg-light">
+            <h3>Libros recientes <span><a href="#">Ver todos -></a></span></h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>LIBRO</th>
+                        <th>AUTOR</th>
+                        <th>ESTADO</th>
+                        <th>ACCIONES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span>Portada</span> Libro ejemplo</td>
+                        <td> Autor ejemplo</td>
+                        <td>Estado ejemplo</td>
+                        <td><button>Modificar</button><button>Eliminar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--FIN Libros recientes-->
+
+        <!--Estadisticas de libros-->
+        <section class="text-bg-light">
+            <h3>Progreso por estado</h3>
+            
+            <div>Teminados <span>XX libros</span><span>XX%</span></div>
+            <div>En proceso <span>XX libros</span><span>XX%</span></div>
+            <div>Sin empezar <span>XX libros</span><span>XX%</span></div>
+        </section>
+        <!--FIN Estadisticas de libros-->
+    </main>
+</body>
+</html>
