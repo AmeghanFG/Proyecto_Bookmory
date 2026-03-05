@@ -1,7 +1,11 @@
-/* *Color para fondos: background */
+/* *Colores */
 /*
     Fondo general: #F8F4EE
     Fondo de elementos primario: #1E1810
+    Café bajito sand: #C8B89A
+    Café discreto: #5A4A38
+    Negro semitransparente: rgba(255,255,255,0.07)
+    Naranja: #e26d5c
 */
 
 .grisFondo {
@@ -13,13 +17,12 @@
     color: white;
 }
 
-/* *Color para texto: color */
-/*
-    Texto discreto café: #5A4A38
-*/
-
 .txtColorCafeDiscreto {
     color: #5A4A38;
+}
+
+.borderCafeDiscreto {
+    border-bottom: solid 1px #C8B89A !important;
 }
 
 /* *Estilos para NAV */
