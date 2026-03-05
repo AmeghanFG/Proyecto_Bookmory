@@ -12,26 +12,26 @@
     <!-- TODO: Documentación Bootstrap-->
     <!--https://getbootstrap.com/docs/5.3/getting-started/introduction/-->
 </head>
-<body class="grisFondo d-flex flex-row">
+<body class="grisFondo d-flex flex-row vh-100 overflow-hidden">
     <!--- *Menú -->
-    <nav id="mainMenu" class="cafePrincipal d-flex flex-column justify-content-start nav align-items-strech w-20 vh-100 p-3">
-        <div class="p-4">
+    <nav id="mainMenu" class="cafePrincipal d-flex flex-column justify-content-start nav  sticky-top align-items-strech w-25 vh-100">
+        <div class="p-5">
             <h2>Bookmory</h2>
-            <p>Biblioteca Personal</p>
-            <hr class="mt-5">
+            <p class="txtColorCafeDiscreto">Biblioteca Personal</p>
         </div>
-        <div class="p-3">
+        <hr class="w-100 mt-0 p-1">
+        <div class="py-3 px-4">
             <ul class="list-unstyled">
-                <li class="d-block px-3 py-2 elementoActual"><a href="home.html" class="text-decoration-none text-white">Inicio</a></li>
-                <li class="d-block px-3 py-2"><a href="#" class="text-decoration-none text-white">Catálogo</a></li>
-                <li class="d-block px-3 py-2"><a href="#" class="text-decoration-none text-white">Mis libros</a></li>
-                <li class="d-block px-3 py-2"><a href="#" class="text-decoration-none text-white">Perfil</a></li>
+                <li class="d-block p-3 elementoActual rounded"><a href="home.html" class="text-decoration-none text-white">Inicio</a></li>
+                <li class="d-block p-3"><a href="#" class="text-decoration-none text-white">Catálogo</a></li>
+                <li class="d-block p-3"><a href="#" class="text-decoration-none text-white">Mis libros</a></li>
+                <li class="d-block p-3"><a href="#" class="text-decoration-none text-white">Perfil</a></li>
             </ul>
 </div>
     </nav>
 
     <!--- *Parte principal -->
-    <main>
+    <main class="w-75 vh-100">
         <header class="text-bg-light">
             <h2>Hola, bienvenido</h2>
         </header>
