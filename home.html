@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 
     <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 
     <!-- TODO: Documentación Bootstrap-->
     <!--https://getbootstrap.com/docs/5.3/getting-started/introduction/-->
 </head>
+
 <body class="grisFondo d-flex flex-row vh-100 overflow-hidden">
     <!--- *Menú -->
-    <nav id="mainMenu" class="cafePrincipal d-flex flex-column justify-content-start nav  sticky-top align-items-strech w-25 vh-100">
+    <nav id="mainMenu"
+        class="cafePrincipal d-flex flex-column justify-content-start nav  sticky-top align-items-strech w-25 vh-100">
         <div class="p-5">
             <h2>Bookmory</h2>
             <p class="txtColorCafeDiscreto">Biblioteca Personal</p>
@@ -22,12 +26,13 @@
         <hr class="w-100 mt-0 p-1">
         <div class="py-3 px-4">
             <ul class="list-unstyled">
-                <li class="d-block p-3 elementoActual rounded"><a href="home.html" class="text-decoration-none text-white">Inicio</a></li>
+                <li class="d-block p-3 elementoActual rounded"><a href="home.html"
+                        class="text-decoration-none text-white">Inicio</a></li>
                 <li class="d-block p-3"><a href="#" class="text-decoration-none text-white">Catálogo</a></li>
                 <li class="d-block p-3"><a href="#" class="text-decoration-none text-white">Mis libros</a></li>
                 <li class="d-block p-3"><a href="#" class="text-decoration-none text-white">Perfil</a></li>
             </ul>
-</div>
+        </div>
     </nav>
 
     <!--- *Parte principal -->
@@ -66,39 +71,73 @@
         <!--- FIN Tarjetas de estado [Total, progreso, terminados, sin empezar] -->
 
         <!--Libros recientes-->
-        <section class="text-bg-light seccionBordes">
-            <h3 class="tituloTabla"> <span>Libros recientes</span> <span><a href="#">Ver todos →</a></span></h3>
-            <table class="table table-borderless">
-                <thead class="table-dark">
-                    <tr>
-                        <th>LIBRO</th>
-                        <th>AUTOR</th>
-                        <th>ESTADO</th>
-                        <th>ACCIONES</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><span>Portada</span> Libro ejemplo</td>
-                        <td> Autor ejemplo</td>
-                        <td> <span class="estadoLibro"> <span>&#9679;</span> Estado ejemplo</span></td>
-                        <td><button> <img class="iconoBoton" src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/vector-icons-4/edit-flwwwz417de3u3nzvstgpu.png/edit-qtep4ftgzlsz4sl22a43m9.png?_a=DATAiZAAZAA0"> </button><button> <img class="iconoBoton" src="https://cdn-icons-png.flaticon.com/512/1214/1214428.png"> </button></td>
-                    </tr>
-                </tbody>
-            </table>
-            <br>
-        </section>
-        <!--FIN Libros recientes-->
+        <section class="d-flex">
+            <section class="text-bg-light seccionBordes flex-grow-1">
+                <h3 class="tituloTabla"> <span>Libros recientes</span> <span><a href="#">Ver todos →</a></span></h3>
+                <table class="table table-borderless">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>LIBRO</th>
+                            <th>AUTOR</th>
+                            <th>ESTADO</th>
+                            <th>ACCIONES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span>Portada</span> Libro ejemplo</td>
+                            <td> Autor ejemplo</td>
+                            <td> <span class="estadoLibro"> <span>&#9679;</span> Estado ejemplo</span></td>
+                            <td><button> <img class="iconoBoton"
+                                        src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/vector-icons-4/edit-flwwwz417de3u3nzvstgpu.png/edit-qtep4ftgzlsz4sl22a43m9.png?_a=DATAiZAAZAA0">
+                                </button><button> <img class="iconoBoton"
+                                        src="https://cdn-icons-png.flaticon.com/512/1214/1214428.png"> </button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <!--FIN Libros recientes-->
 
-        <!--Estadisticas de libros-->
-        <section class="text-bg-light">
-            <h3>Progreso por estado</h3>
-            
-            <div>Teminados <span>XX libros</span><span>XX%</span></div>
-            <div>En proceso <span>XX libros</span><span>XX%</span></div>
-            <div>Sin empezar <span>XX libros</span><span>XX%</span></div>
+            <!--Estadisticas de libros-->
+            <section class="text-bg-light bordesTablaProgreso">
+                <h3 class="tituloTabla"> <span>Progreso por estado</span></h3>
+
+                <div class="filaProgreso">
+                    <img class="iconoProgreso" src="https://cdn-icons-png.flaticon.com/512/16799/16799608.png">
+                    <label>Terminados:</label>
+                    <div class="datosProgreso">
+                        <span>20 libros</span>
+                        <span>•</span>
+                        <span>70%</span>
+                    </div>
+                </div>
+                <progress class="barraTerminados" max="100" value="70"></progress>
+
+                <div class="filaProgreso">
+                    <img class="iconoProgreso" src="https://images.emojiterra.com/google/android-12l/512px/1f4d6.png">
+                    <label>En proceso:</label>
+                    <div class="datosProgreso">
+                        <span>7 libros</span>
+                        <span>•</span>
+                        <span>40%</span>
+                    </div>
+                </div>
+                <progress class="barraProceso" max="100" value="40"></progress>
+
+                <div class="filaProgreso">
+                    <img class="iconoProgreso"
+                        src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/1024px/1f4ed.png">
+                    <label>Sin empezar:</label>
+                    <div class="datosProgreso">
+                        <span>3 libros</span>
+                        <span>•</span>
+                        <span>20%</span>
+                    </div>
+                </div>
+                <progress class="barraSinEmpezar" max="100" value="20"></progress>
+            </section>
+            <!--FIN Estadisticas de libros-->
         </section>
-        <!--FIN Estadisticas de libros-->
     </main>
 </body>
 </html>
