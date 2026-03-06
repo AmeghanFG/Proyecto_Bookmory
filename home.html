@@ -66,10 +66,10 @@
         <!--- FIN Tarjetas de estado [Total, progreso, terminados, sin empezar] -->
 
         <!--Libros recientes-->
-        <section class="text-bg-light">
-            <h3>Libros recientes <span><a href="#">Ver todos -></a></span></h3>
-            <table>
-                <thead>
+        <section class="text-bg-light seccionBordes">
+            <h3 class="tituloTabla"> <span>Libros recientes</span> <span><a href="#">Ver todos →</a></span></h3>
+            <table class="table table-borderless">
+                <thead class="table-dark">
                     <tr>
                         <th>LIBRO</th>
                         <th>AUTOR</th>
@@ -81,11 +81,12 @@
                     <tr>
                         <td><span>Portada</span> Libro ejemplo</td>
                         <td> Autor ejemplo</td>
-                        <td>Estado ejemplo</td>
-                        <td><button>Modificar</button><button>Eliminar</button></td>
+                        <td> <span class="estadoLibro"> <span>&#9679;</span> Estado ejemplo</span></td>
+                        <td><button> <img class="iconoBoton" src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/vector-icons-4/edit-flwwwz417de3u3nzvstgpu.png/edit-qtep4ftgzlsz4sl22a43m9.png?_a=DATAiZAAZAA0"> </button><button> <img class="iconoBoton" src="https://cdn-icons-png.flaticon.com/512/1214/1214428.png"> </button></td>
                     </tr>
                 </tbody>
             </table>
+            <br>
         </section>
         <!--FIN Libros recientes-->
 
