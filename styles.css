@@ -31,3 +31,38 @@ nav li:hover a {
     color: #e26d5c !important;
 }
 
+/* * Tabla de libros */
+
+.seccionBordes {
+    margin: 1% 2%;
+    /* padding: 2%; */
+    border-radius: 25px;
+}
+/* Titulo de sección */
+.tituloTabla {
+    padding: 1% 2%;
+    display: flex;
+    justify-content: space-between;
+    font-size: medium;
+    color: #5A4A38;
+}
+
+span a {
+    color: #e26d5c;
+    text-decoration: none;
+}
+
+/* Contenido en sí */
+.estadoLibro {
+    background-color: #ffc38b89;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.estadoLibro span {
+    color: #e2af5c;
+}
+
+.iconoBoton {
+    height: 16px;
+}
