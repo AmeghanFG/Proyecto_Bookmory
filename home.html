@@ -13,6 +13,7 @@
 
     <!-- TODO: Documentación Bootstrap-->
     <!--https://getbootstrap.com/docs/5.3/getting-started/introduction/-->
+    <!--https://icons.getbootstrap.com/?q=book-->
 </head>
 
 <body class="grisFondo d-flex flex-row vh-100 overflow-hidden">
@@ -26,11 +27,11 @@
         <hr class="w-100 mt-0 p-1">
         <div class="py-3 px-4">
             <ul class="list-unstyled">
-                <li class="d-block p-3 elementoActual rounded"><a href="home.html"
-                        class="text-decoration-none text-white">Inicio</a></li>
-                <li class="d-block p-3"><a href="#" class="text-decoration-none text-white">Catálogo</a></li>
-                <li class="d-block p-3"><a href="#" class="text-decoration-none text-white">Mis libros</a></li>
-                <li class="d-block p-3"><a href="#" class="text-decoration-none text-white">Perfil</a></li>
+                <li class="d-block py-3 elementoActual rounded"><a href="home.html"
+                        class="text-decoration-none text-white px-3">Inicio</a></li>
+                <li class="d-block py-3"><a href="#" class="text-decoration-none text-white px-3">Catálogo</a></li>
+                <li class="d-block py-3"><a href="#" class="text-decoration-none text-white px-3">Mis libros</a></li>
+                <li class="d-block py-3"><a href="#" class="text-decoration-none text-white px-3">Perfil</a></li>
             </ul>
         </div>
     </nav>
@@ -42,9 +43,9 @@
         </header>
 
         <!--- *Tarjetas de estado [Total, progreso, terminados, sin empezar] -->
-        <section class="d-flex">
+        <section class="d-flex flex-wrap px-2">
             <!--Tarjeta: Total de libros-->
-            <div class="text-bg-light bordesTarjetasEstado tarjetaEstado">
+            <div class="text-bg-light bordesTarjetasEstado tarjetaEstado flex-grow-1">
                 <img class="iconoTarjeta" src="https://cdn-icons-png.flaticon.com/128/5832/5832416.png">
                 <div>
                     <p class="numeroTarjeta">12</p>
@@ -52,7 +53,7 @@
                 </div>
             </div>
             <!--Tarjeta: Terminados -->
-            <div class="text-bg-light bordesTarjetasEstado tarjetaEstado">
+            <div class="text-bg-light bordesTarjetasEstado tarjetaEstado flex-grow-1">
                 <img class="iconoTarjeta" src="https://cdn-icons-png.flaticon.com/512/16799/16799608.png">
                 <div>
                     <p class="numeroTarjeta">20</p>
@@ -60,7 +61,7 @@
                 </div>
             </div>
             <!--Tarjeta: En proceso-->
-            <div class="text-bg-light bordesTarjetasEstado tarjetaEstado">
+            <div class="text-bg-light bordesTarjetasEstado tarjetaEstado flex-grow-1">
                 <img class="iconoTarjeta" src="https://images.emojiterra.com/google/android-12l/512px/1f4d6.png">
                 <div>
                     <p class="numeroTarjeta">7</p>
@@ -68,7 +69,7 @@
                 </div>
             </div>
             <!--Tarjeta: Sin empezar -->
-            <div class="text-bg-light bordesTarjetasEstado tarjetaEstado">
+            <div class="text-bg-light bordesTarjetasEstado tarjetaEstado flex-grow-1">
                 <img class="iconoTarjeta"
                     src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/1024px/1f4ed.png">
                 <div>
@@ -154,11 +155,7 @@
             </section>
             <!--FIN Estadisticas de libros-->
         </section>
-<<<<<<< HEAD
         <!--FIN Estadisticas de libros-->
-
-=======
->>>>>>> d0af53ef9b8644bb057174e3ac32ace7f60b799c
     </main>
 </body>
 

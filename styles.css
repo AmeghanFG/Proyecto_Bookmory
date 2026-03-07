@@ -31,10 +31,12 @@
 }
 
 /* *Estilos para NAV */
+/* Color para la página actual*/
 .elementoActual {
     background-color: rgba(255, 255, 255, 0.07);
 }
 
+/* Color al pasar el puntero por los elementos del menú*/
 nav li:hover a {
     color: #e26d5c !important;
 }
@@ -136,7 +138,6 @@ progress::-webkit-progress-value {
 
 .bordesTarjetasEstado {
     border: 1px solid #723d46; 
-    width: 400px;
     padding: 8px 20px;
     margin: 15px;
     border-radius: 25px;
