@@ -8,6 +8,11 @@
     Naranja: #e26d5c
 */
 
+.header {
+    font-family: 'Brush Script MT', Garamond, serif;
+    color: #1E1810;
+}
+
 .grisFondo {
     background: #F8F4EE;
 }
