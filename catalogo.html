@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- TODO: Documentación Bootstrap-->
+    <!--https://getbootstrap.com/docs/5.3/getting-started/introduction/-->
+    <!--https://icons.getbootstrap.com/?q=book-->
+</head>
+
+<body class="grisFondo d-flex flex-row vh-100 overflow-hidden">
+    <!--- *Menú -->
+    <nav id="mainMenu"
+        class="cafePrincipal d-flex flex-column justify-content-start nav  sticky-top align-items-strech w-25 vh-100">
+        <div class="p-5">
+            <h2>Bookmory</h2>
+            <p class="txtColorCafeDiscreto">Biblioteca Personal</p>
+        </div>
+        <hr class="w-100 mt-0 p-1">
+        <div class="py-3 px-4">
+            <ul class="list-unstyled">
+                <li class="d-block py-3 elementoActual rounded"><a href="home.html"
+                        class="text-decoration-none text-white px-3">Inicio</a></li>
+                <li class="d-block py-3"><a href="#" class="text-decoration-none text-white px-3">Catálogo</a></li>
+                <li class="d-block py-3"><a href="#" class="text-decoration-none text-white px-3">Mis libros</a></li>
+                <li class="d-block py-3"><a href="#" class="text-decoration-none text-white px-3">Perfil</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--- *Parte principal -->
+    <main class="w-75 vh-100 overflow-auto">
+        <!--*Encabezado-->
+        <header class="d-flex flex-row flex-wrap align-items-center text-bg-light mb-5 py-3 px-4 border-bottom border-2 borderCafeDiscreto">
+            <h2 class="header display-3 tituloEspacioFlex3">Catálogo de libros</h2>
+
+            <!--Barra de busqueda-->
+            <form class="d-flex align-items-center" role="search">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-dark" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg></button>
+            </form>
+        </header>
+
+        <!--*Sección de filtros-->
+        <aside class="bg-light">
+            <section>
+                <h4>Género</h4>
+                <ul class="list-unstyled">
+                    <li><button>Todos <span>48</span></button></li>
+                    <li><button>Ficción <span>18</span></button></li>
+                    <li><button>Historia <span>9</span></button></li>
+                    <li><button>Ciencia <span>7</span></button></li>
+                    <li><button>Terror <span>6</span></button></li>
+                    <li><button>Poesía <span>5</span></button></li>
+                </ul>
+            </section>
+        </aside>
+        <!--* FIN Sección de filtros-->
+
+        <!--*Sección de catálgo de libros-->
+        <section class="d-flex flex-wrap gap-4">
+            <!-- TODO: Acomodar tamaño de imagen para que todas las tarjetas tengan el mismo tamaño de imagen, creo que ocupan el mismo alto sin importar el tamaño ed la imagen, creo que eso no se debe corregir, eliminar ejemplos-->
+            <!--Documentación de tarjetas https://getbootstrap.com/docs/5.3/components/card/-->
+            <div class="card p-2" style="width: 18rem;">
+                <img src="https://m.media-amazon.com/images/I/91S1vKWiZWL.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                    <a href="#" class="btn btn-primary">Agregar</a>
+                </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+                <img src="https://m.media-amazon.com/images/I/71Iy0Svh7SL._AC_UF1000,1000_QL80_.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                    <a href="#" class="btn btn-primary">Agregar</a>
+                </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+                <img src="https://m.media-amazon.com/images/I/91XhE9qKhtL._AC_UF1000,1000_QL80_.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                    <a href="#" class="btn btn-primary">Agregar</a>
+                </div>
+            </div>
+        </section>
+        <!--*Sección de catálgo de libros-->
+    </main>
+</body>
+
+</html>

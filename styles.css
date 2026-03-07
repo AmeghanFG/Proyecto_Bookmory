@@ -163,3 +163,10 @@ progress::-webkit-progress-value {
     margin: 0;
     color: #7a6f66;
 }
+
+
+/* ----------------------------------- CATALOGO ----------------------------------- */
+/* flex del display para que ocupe más espacio que la barra */
+.tituloEspacioFlex3 {
+    flex: 3
+}
