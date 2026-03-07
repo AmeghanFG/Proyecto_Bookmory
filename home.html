@@ -42,32 +42,41 @@
         </header>
 
         <!--- *Tarjetas de estado [Total, progreso, terminados, sin empezar] -->
-        <div>
+        <section class="d-flex">
             <!--Tarjeta: Total de libros-->
-            <div class="text-bg-light">
-                <span>Icono</span>
-                <p>XX</p>
-                <p>Total de libros</p>
+            <div class="text-bg-light bordesTarjetasEstado tarjetaEstado">
+                <img class="iconoTarjeta" src="https://cdn-icons-png.flaticon.com/128/5832/5832416.png">
+                <div>
+                    <p class="numeroTarjeta">12</p>
+                    <p class="textoTarjeta">Total de libros</p>
+                </div>
             </div>
             <!--Tarjeta: En proceso-->
-            <div class="text-bg-light">
-                <span>Icono</span>
-                <p>XX</p>
-                <p>En proceso</p>
+            <div class="text-bg-light bordesTarjetasEstado tarjetaEstado">
+                <img class="iconoTarjeta" src="https://cdn-icons-png.flaticon.com/512/16799/16799608.png">
+                <div>
+                    <p class="numeroTarjeta">20</p>
+                    <p class="textoTarjeta">En proceso</p>
+                </div>
             </div>
             <!--Tarjeta: Terminados -->
-            <div class="text-bg-light">
-                <span>Icono</span>
-                <p>XX</p>
-                <p>Terminados</p>
+            <div class="text-bg-light bordesTarjetasEstado tarjetaEstado">
+                <img class="iconoTarjeta" src="https://images.emojiterra.com/google/android-12l/512px/1f4d6.png">
+                <div>
+                    <p class="numeroTarjeta">7</p>
+                    <p class="textoTarjeta">Terminados</p>
+                </div>
             </div>
             <!--Tarjeta: Sin empezar -->
-            <div class="text-bg-light">
-                <span>Icono</span>
-                <p>XX</p>
-                <p>Sin empezar</p>
+            <div class="text-bg-light bordesTarjetasEstado tarjetaEstado">
+                <img class="iconoTarjeta"
+                    src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/1024px/1f4ed.png">
+                <div>
+                    <p class="numeroTarjeta">3</p>
+                    <p class="textoTarjeta">Sin empezar</p>
+                </div>
             </div>
-        </div>
+        </section>
         <!--- FIN Tarjetas de estado [Total, progreso, terminados, sin empezar] -->
 
         <!--Libros recientes-->
@@ -140,4 +149,5 @@
         </section>
     </main>
 </body>
+
 </html>

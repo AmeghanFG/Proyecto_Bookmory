@@ -111,6 +111,7 @@ progress::-webkit-progress-value {
     padding: 20px;
     margin: 20px;
     border-radius: 25px;
+    border: 1px solid #723d46; 
 }
 
 .tituloTabla {
@@ -126,4 +127,33 @@ progress::-webkit-progress-value {
     margin-left: auto;
     display: flex;
     gap: 10px;
+}
+
+.bordesTarjetasEstado {
+    border: 1px solid #723d46; 
+    width: 400px;
+    padding: 8px 20px;
+    margin: 15px;
+    border-radius: 25px;
+}
+
+.iconoTarjeta {
+    width: 50px;
+}
+
+.tarjetaEstado{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.numeroTarjeta{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.textoTarjeta{
+    margin: 0;
+    color: #7a6f66;
 }
